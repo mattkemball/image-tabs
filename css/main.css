@@ -1,0 +1,62 @@
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+  box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+
+  font-family: sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.dots {
+	margin: 0;
+	padding: 0;
+	list-style-image: none;
+	position: absolute;
+	left: 40rem;
+	bottom: 1rem;
+}
+
+.dots > li {
+	display: inline-block;
+}
+
+.dots a {
+	display: inline-block;
+	text-decoration: none;
+	border-radius: 10px;
+	border: 2px solid #666;
+	transition: all 500ms linear;
+	width: 10px;
+	height: 10px;
+}
+
+.dots a:hover {
+	background-color: #666;
+	color: #666;
+}
+
+.pics img {
+	display: none;
+}
+
+.pics img:target {
+	display: block;
+	position: absolute;
+	bottom: 3rem;
+	left: 25rem;
+}
